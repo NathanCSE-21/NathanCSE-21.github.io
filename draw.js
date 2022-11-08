@@ -94,7 +94,7 @@ var init = function () {
         pulse((1 + n) * .5, (1 + n) * .5);
         time += ((Math.sin(time)) < 0 ? 9 : (n > 0.8) ? .2 : 1) * config.timeDelta;
       ctx.font = "20px Arial";
-      ctx.fillText("Nguyễn Trọng Nhân yêu Võ Thị Tố Nga",600,50);
+      ctx.fillText("Nguyễn Trọng Nhân yêu Võ Thị Tố Nga",1100,350);
         ctx.fillStyle = "rgba(0,0,0,.1)";
         ctx.fillRect(0, 0, width, height);
         for (i = e.length; i--;) {
