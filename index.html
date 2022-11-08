@@ -1,122 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Cuộc Hành Trình</title>
-</head>
-<body>
-    <div class="container">
-        <div class="timeline">
-          <ul>
-            <li>
-              <div class="timeline-content">
-                <h3 class="date">Giữa tháng 6, 2022</h3>
-                <h1>Chuyến đi đầu tiên</h1>
-                <p>Nga à, em đã được nghe anh kể về chi tiết này rất nhiều lần. Đây là câu chuyện rất thú vị, vì nó là chuyến đi đặt biệt nhất với anh từ trước đến nay.</p>
-                <p>Đây là lần đầu tiên anh gặp em, lần đầu nhìn thấy em từ xa anh đã không thể rời mắt được. Một cô gái xinh xinh, dễ thương gây sự chú ý đến mình.</p>
-                <p>Từ sau lần tiếp xúc này, anh đã quyết tâm kết bạn, để có thể từ từ làm quen với em.</p>                
-                </div>
-            </li>
-            <li>
-              <div class="timeline-content">
-                <h3 class="date">Sau tháng 6, 2022</h3>
-                <h1>Chuỗi ngày làm quen</h1>
-                <p>Sau lần tiếp xúc đầu tiên đấy, anh đã quyết tâm và cố gắng tìm cách làm quen, và nói chuyện.</p>
-                <p>Đối với anh, giai đoạn này rất là khó khăn, có chút cản trở. Điển hình như là lần đầu mời em đi chơi và bị từ chối thẳng thừng.</p>
-                <img src="/images/MemeMeo.jpg" alt="">
-                <p>Ở giai đoạn này, anh rất muốn tiếp xúc với em, nhưng rất là hạn chế vì lúc này cả hai đều chưa biết nhau, và em có vẻ rất e dè lo ngại. </p>
-                <p>Hiểu được điều đó, nên thay vì nhắn tin với em mỗi ngày khiến em thấy phiền và cảm thấy bị lấn áp, anh từ từ thi thoảng tìm cách nói chuyện với em.</p>
-            </div>
-            </li>
-            <li>
-              <div class="timeline-content">
-                <h3 class="date">Giai đoạn tháng 6 đến tháng 8, 2022</h3>
-                <h1>Giai đoạn làm quen phần tiếp</h1>
-                <p>Đến được giai đoạn này, ta đã bắt đầu nhắn tin nhiều hơn và từ từ anh đã bắt đầu có việc này việc kia để lấy cớ nhắn em.</p>
-                <p>Ấn tượng của anh lúc này là em đã bắt đầu dễ tiếp xúc, em còn có phần chủ động hơn. Thi thoảng chính em là người chủ động nhắn tin cho anh trước.  </p>
-                <img src="/images/FirstPic.jpg" alt="">
-            </div>
-            </li>
-            <li>
-              <div class="timeline-content">
-                <h3 class="date">Tháng 8, 2022</h3>
-                <h1>Giai đoạn làm quen phần cuối</h1>
-                <p>Đến được giai đoạn này, hai ta gần như đã bắt đầu thân hơn trước. Nhắn tin cũng nhiều hơn, thi thoảng ta không có gì để nhắn với nhau, anh còn mạnh dạng đề xuất call cho nhau. Đó là cái cớ của anh để có thể từ từ tiến sang giai đoạn tiếp theo.</p>
-                <p>Ở giai đoạn này, chúng ta bắt đầu tìm được những điểm tương đồng. Hay rủ nhau xem phim này, phim kia, và cùng bàn tán về nó.</p>              
-                <img src="/images/2N1D.png" alt="">
-            </div>      
-            </li>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <style>
+  html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+  </style>
+ </HEAD>
 
-            <li>
-                <div class="timeline-content">
-                  <h3 class="date">Giữa tháng 8, 2022</h3>
-                  <h1>Kết thúc làm quen</h1>
-                  <p>Đến đây, ta đã có mức tiến triển rất tốt. Nhưng có nhiều lúc, anh đã cảm giác không thể tiến xa hơn, và lại có lần anh vô tình thấy được những gì anh không nên thấy.</p>
-                <p>Để không còn thắc mắc gì nữa, anh đã hỏi em xem em có đang quen ai không, và em cũng đã xác nhận mình đang ở trong một mối quan hệ. </p>
-                <p>Đến đây anh đã có ý định từ bỏ, và quyết định sẽ bớt liên lạc lại để không phải phiền đến em.</p>
-                </div>      
-              </li>
+ <BODY>
+  <canvas id="pinkboard"></canvas>
+  <script>
+  /*
+ * Settings
+ */
+var settings = {
+  particles: {
+    length:   500, // maximum amount of particles
+    duration:   2, // particle duration in sec
+    velocity: 100, // particle velocity in pixels/sec
+    effect: -0.75, // play with this for a nice effect
+    size:      30, // particle size in pixels
+  },
+};
 
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Cuối tháng 8, 2022</h3>
-                  <h1>Khởi sắc sau cơn mưa</h1>
-                    <p>Những đã tưởng mối quan hệ này sẽ không tiến triễn được thêm nữa. Thì một lần nữa em lại chủ động rủ anh xem phim</p>
-                    <img src="/images/RuXemPhim.png">
+/*
+ * RequestAnimationFrame polyfill by Erik Möller
+ */
+(function(){var b=0;var c=["ms","moz","webkit","o"];for(var a=0;a<c.length&&!window.requestAnimationFrame;++a){window.requestAnimationFrame=window[c[a]+"RequestAnimationFrame"];window.cancelAnimationFrame=window[c[a]+"CancelAnimationFrame"]||window[c[a]+"CancelRequestAnimationFrame"]}if(!window.requestAnimationFrame){window.requestAnimationFrame=function(h,e){var d=new Date().getTime();var f=Math.max(0,16-(d-b));var g=window.setTimeout(function(){h(d+f)},f);b=d+f;return g}}if(!window.cancelAnimationFrame){window.cancelAnimationFrame=function(d){clearTimeout(d)}}}());
 
-                    <p>Đây là lúc anh thấy rất ấn tượng, cũng là lúc anh nghĩ bắt đầu khởi sắc cho cuộc tình này. Sau ngày đầu tiên từ chối xem phim cùng em, anh đã sâu chuỗi lại và đoán là lần trước em đã nói dối.</p>
-                    <p>Thế là anh đã lập tức nhân cơ hội này và tìm em xem phim cùng vào ngày tiếp theo, và bắt đầu từ lúc này chúng ta đã bắt đầu thân hơn trước và gọi với nhau gần như mỗi ngày.</p>
-                </div>      
-              </li>
+/*
+ * Point class
+ */
+var Point = (function() {
+  function Point(x, y) {
+    this.x = (typeof x !== 'undefined') ? x : 0;
+    this.y = (typeof y !== 'undefined') ? y : 0;
+  }
+  Point.prototype.clone = function() {
+    return new Point(this.x, this.y);
+  };
+  Point.prototype.length = function(length) {
+    if (typeof length == 'undefined')
+      return Math.sqrt(this.x * this.x + this.y * this.y);
+    this.normalize();
+    this.x *= length;
+    this.y *= length;
+    return this;
+  };
+  Point.prototype.normalize = function() {
+    var length = this.length();
+    this.x /= length;
+    this.y /= length;
+    return this;
+  };
+  return Point;
+})();
 
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Tháng 9, 2022</h3>
-                  <h1>Tháng 9 tình yêu</h1>
-                  <p>Đây là thời điểm mà chúng ta rất là thân, bắt đầu xem phim tình cảm cùng nhau :)) và điển hình là cột mốc đâu tiên này</p>
-                  <img src="/images/TinhCam.png" alt="">
-                  <p>Không biết từ bao giờ, anh đã bắt đầu thả thính nhiều hơn, và anh cũng cảm giác được bé đã bắt đầu có tình cảm với anh lúc này</p>
-                  <img src="/images/ThaThinh.png" alt="">
+/*
+ * Particle class
+ */
+var Particle = (function() {
+  function Particle() {
+    this.position = new Point();
+    this.velocity = new Point();
+    this.acceleration = new Point();
+    this.age = 0;
+  }
+  Particle.prototype.initialize = function(x, y, dx, dy) {
+    this.position.x = x;
+    this.position.y = y;
+    this.velocity.x = dx;
+    this.velocity.y = dy;
+    this.acceleration.x = dx * settings.particles.effect;
+    this.acceleration.y = dy * settings.particles.effect;
+    this.age = 0;
+  };
+  Particle.prototype.update = function(deltaTime) {
+    this.position.x += this.velocity.x * deltaTime;
+    this.position.y += this.velocity.y * deltaTime;
+    this.velocity.x += this.acceleration.x * deltaTime;
+    this.velocity.y += this.acceleration.y * deltaTime;
+    this.age += deltaTime;
+  };
+  Particle.prototype.draw = function(context, image) {
+    function ease(t) {
+      return (--t) * t * t + 1;
+    }
+    var size = image.width * ease(this.age / settings.particles.duration);
+    context.globalAlpha = 1 - this.age / settings.particles.duration;
+    context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
+  };
+  return Particle;
+})();
 
-                    
+/*
+ * ParticlePool class
+ */
+var ParticlePool = (function() {
+  var particles,
+      firstActive = 0,
+      firstFree   = 0,
+      duration    = settings.particles.duration;
+  
+  function ParticlePool(length) {
+    // create and populate particle pool
+    particles = new Array(length);
+    for (var i = 0; i < particles.length; i++)
+      particles[i] = new Particle();
+  }
+  ParticlePool.prototype.add = function(x, y, dx, dy) {
+    particles[firstFree].initialize(x, y, dx, dy);
+    
+    // handle circular queue
+    firstFree++;
+    if (firstFree   == particles.length) firstFree   = 0;
+    if (firstActive == firstFree       ) firstActive++;
+    if (firstActive == particles.length) firstActive = 0;
+  };
+  ParticlePool.prototype.update = function(deltaTime) {
+    var i;
+    
+    // update active particles
+    if (firstActive < firstFree) {
+      for (i = firstActive; i < firstFree; i++)
+        particles[i].update(deltaTime);
+    }
+    if (firstFree < firstActive) {
+      for (i = firstActive; i < particles.length; i++)
+        particles[i].update(deltaTime);
+      for (i = 0; i < firstFree; i++)
+        particles[i].update(deltaTime);
+    }
+    
+    // remove inactive particles
+    while (particles[firstActive].age >= duration && firstActive != firstFree) {
+      firstActive++;
+      if (firstActive == particles.length) firstActive = 0;
+    }
+    
+    
+  };
+  ParticlePool.prototype.draw = function(context, image) {
+    // draw active particles
+    if (firstActive < firstFree) {
+      for (i = firstActive; i < firstFree; i++)
+        particles[i].draw(context, image);
+    }
+    if (firstFree < firstActive) {
+      for (i = firstActive; i < particles.length; i++)
+        particles[i].draw(context, image);
+      for (i = 0; i < firstFree; i++)
+        particles[i].draw(context, image);
+    }
+  };
+  return ParticlePool;
+})();
 
-                </div>      
-              </li>
+/*
+ * Putting it all together
+ */
+(function(canvas) {
+  var context = canvas.getContext('2d'),
+      particles = new ParticlePool(settings.particles.length),
+      particleRate = settings.particles.length / settings.particles.duration, // particles/sec
+      time;
+  
+  // get point on heart with -PI <= t <= PI
+  function pointOnHeart(t) {
+    return new Point(
+      160 * Math.pow(Math.sin(t), 3),
+      130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+    );
+  }
+  
+  // creating the particle image using a dummy canvas
+  var image = (function() {
+    var canvas  = document.createElement('canvas'),
+        context = canvas.getContext('2d');
+    canvas.width  = settings.particles.size;
+    canvas.height = settings.particles.size;
+    // helper function to create the path
+    function to(t) {
+      var point = pointOnHeart(t);
+      point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
+      point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
+      return point;
+    }
+    // create the path
+    context.beginPath();
+    var t = -Math.PI;
+    var point = to(t);
+    context.moveTo(point.x, point.y);
+    while (t < Math.PI) {
+      t += 0.01; // baby steps!
+      point = to(t);
+      context.lineTo(point.x, point.y);
+    }
+    context.closePath();
+    // create the fill
+    context.fillStyle = '#ea80b0';
+    context.fill();
+    // create the image
+    var image = new Image();
+    image.src = canvas.toDataURL();
+    return image;
+  })();
+  
+  // render that thing!
+  function render() {
+    // next animation frame
+    requestAnimationFrame(render);
+    
+    // update time
+    var newTime   = new Date().getTime() / 1000,
+        deltaTime = newTime - (time || newTime);
+    time = newTime;
+    
+    // clear canvas
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // create new particles
+    var amount = particleRate * deltaTime;
+    for (var i = 0; i < amount; i++) {
+      var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+      var dir = pos.clone().length(settings.particles.velocity);
+      particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
+    }
+    
+    // update and draw particles
+    particles.update(deltaTime);
+    particles.draw(context, image);
+  }
+  
+  // handle (re-)sizing of the canvas
+  function onResize() {
+    canvas.width  = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+  }
+  window.onresize = onResize;
+  
+  // delay rendering bootstrap
+  setTimeout(function() {
+    onResize();
+    render();
+  }, 10);
+})(document.getElementById('pinkboard'));
+  </script>
+ </BODY>
+</HTML>
 
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Tháng 9, 2022</h3>
-                  <h1>Tháng 9 tình yêu phần tiếp</h1>
-                    <p>Sau nhiều lần thả thính quyết liệt, bé đã bắt đầu cho cả hai ta cơ hội. Lúc này anh rất là vui, em cũng nhớ vào hôm đó anh đã được song hỷ lâm môn.</p>
-                    <img src="/images/ToTinh.png" alt="">
-                </div>   
-              </li>
 
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Tháng 9 đến hiện tại, 2022</h3>
-                  <h1>Tháng ngày tình yêu</h1>
-                    <p>Kể từ lúc mình yêu nhau, cuộc sống anh đã bắt đầu thay đổi. Đã bắt đầu, có thêm một hương vị khác cho cuộc sống của mình. Thay vì những ngày tháng tẻ nhạt như lúc trước, anh đã được yêu thương em, cùng yêu chia sẽ mọi thứ, và làm những trò trẻ con mọi lúc mọi nơi.</p>
-                    <p>Và ấn tượng của anh là, em đã bắt đầu chủ động hơn lúc trước, thi thoảng còn thả thính anh nữa :)) thật là đáng yêu</p>
-                <img src="/images/ChuDong.png" alt="">
-                </div>   
-              </li>
-
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Ta của sau này</h3>
-                  <h1>Tháng ngày sau này</h1>
-                  <p>Những tháng ngày này, bên em anh rất vui, anh muốn chúng ta sẽ tiếp tục như thế này mãi.</p>
-                  <p>Và anh là người rất tham lam, nên anh rất muốn giữ em mãi bên mình suốt đời.</p>
-                  <p>Anh muốn thổ lộ với em những điều này và muốn hỏi em rằng hay là mình cưới nhau đi? Anh hứa sẽ luôn luôn cho em được hạnh phúc.</p>
-                <img src="/images/CauHon.png" alt="">
-                </div>   
-              </li>
-          </ul>
-        </div>
-      </div>
-</body>
-</html>
